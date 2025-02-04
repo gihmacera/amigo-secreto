@@ -1,0 +1,121 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #FE652B;
+    --color-button-hover: #E55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--color-shadow);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.button-add {
+    width: 30%;
+    padding: 10px;
+    background-color: var(--color-tertiary);
+    border: 2px solid var(--color-primary);
+    border-radius: 0 25px 25px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background-color: #A1A1A1;
+}
+
+.name-list, .result-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.name-item, .result-item {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.opcoes-pos-sorteio {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-zerar, .button-continuar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-zerar {
+    background-color: #FF4D4D;
+    color: var(--color-white);
+}
+
+.button-zerar:hover {
+    background-color: #E53E3E;
+}
+
+.button-continuar {
+    background-color: #4CAF50;
+    color: var(--color-white);
+}
+
+.button-continuar:hover {
+    background-color: #45A049;
+}
